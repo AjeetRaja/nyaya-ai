@@ -3,6 +3,15 @@ from pydantic import BaseModel
 import json
 
 app = FastAPI()
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # for now testing
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Load BNS data from JSON file
 with open("data/bns_sections.json", "r", encoding="utf-8") as file:

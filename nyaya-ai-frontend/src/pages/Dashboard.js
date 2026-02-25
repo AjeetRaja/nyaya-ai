@@ -44,7 +44,9 @@ function Dashboard() {
     setQuery("");
 
     try {
-      const response = await fetch("http://localhost:5000/ask", {
+      const BASE_URL = process.env.REACT_APP_API_URL;
+
+const response = await fetch(`${BASE_URL}/ask`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

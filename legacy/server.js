@@ -5,7 +5,6 @@ import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
 import mongoose from "mongoose";
-import fetch from "node-fetch";
 import bnsModel from "../models/bns.model.js";
 
 const app = express();

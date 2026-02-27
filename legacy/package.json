@@ -1,11 +1,11 @@
 {
   "name": "nyaya_ai",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nyaya AI Backend",
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +15,6 @@
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "express-rate-limit": "^8.2.1",
-    "mongoose": "^8.0.0",
-    "node-fetch": "^3.3.2"
+    "mongoose": "^8.0.0"
   }
 }

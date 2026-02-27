@@ -5,7 +5,8 @@ import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
 import mongoose from "mongoose";
-import bnsModel from "../models/bns.model.js";
+import bnsModel from "./models/bns.model.js";
+import { askAI } from "./ai.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
